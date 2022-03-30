@@ -44,46 +44,54 @@ public class AttributeController{
         if(opt.isPresent()){
             Attribute attribute=opt.get();
             attribute.setName(attributeChance.getName());
+            attribute.setTypeOfAttribute(attribute.getTypeOfAttribute());
             return attributeService.saveAttribute(attribute);
         }
         return null;
     }
 
     @PutMapping("/addParameter/{idAt}")
-    Attribute createParametersFroAttribute(@PathVariable("idAt") Long id,
+    Attribute createNewParametersForAttribute(@PathVariable("idAt") Long id,
                                             @RequestBody List<Parameter> parameters){
 
-        Attribute attribute=attributeService.findById(id).get();
-        List<Attribute> attributes=new ArrayList<>();
-        attributes.add(attribute);
-
-        List<Parameter> parameterList=new ArrayList<>();
-
-        for(int i=0;i<parameters.size();i++){
-            parameters.get(i).setAttribute(attribute);
-            parameterList.add(parameterService.saveParameter(parameters.get(i)));
-        }
-        attribute.setParameters(parameterList);
-        return attributeService.saveAttribute(attribute);
-    }
-
-    @PutMapping("/addAttribute/{idAt}/{idPar}")
-    Attribute addParameterInAttribute(@PathVariable("idAt") Long idAt,
-                                         @PathVariable("idPar") Long idPar) {
-
-        if(attributeService.findById(idAt).isPresent()&&parameterService.findById(idPar).isPresent()){
-            Attribute attribute=attributeService.findById(idAt).get();
-            Parameter parameter=parameterService.findById(idPar).get();
-            List<Parameter> parameters=new ArrayList<>();
-            parameters.add(parameter);
+        if(attributeService.findById(id).isPresent()){
+            Attribute attribute=attributeService.findById(id).get();
             List<Attribute> attributes=new ArrayList<>();
             attributes.add(attribute);
 
-            attribute.setParameters(parameters);
-            attributeService.saveAttribute(attribute);
+            List<Parameter> parameterList=new ArrayList<>();
 
-            parameter.setAttribute(attribute);
-            parameterService.saveParameter(parameter);
+            for (Parameter parameter : parameters) {
+                parameter.setAttribute(attribute);
+                parameterList.add(parameterService.saveParameter(parameter));
+            }
+            attribute.setParameters(parameterList);
+            return attributeService.saveAttribute(attribute);
+        }
+        return null;
+    }
+
+    @PutMapping("/addParameterIn/{idAt}")
+    Attribute addParameterInAttribute(@PathVariable("idAt") Long idAt,
+                                         @RequestBody List<Long> parametersId) {
+
+        if(attributeService.findById(idAt).isPresent()){
+            Attribute attribute=attributeService.findById(idAt).get();
+            for (Long aLong : parametersId) {
+                if (parameterService.findById(aLong).isPresent()) {
+                    Parameter parameter = parameterService.findById(aLong).get();
+                    List<Parameter> parameters = new ArrayList<>();
+                    parameters.add(parameter);
+                    List<Attribute> attributes = new ArrayList<>();
+                    attributes.add(attribute);
+
+                    attribute.setParameters(parameters);
+                    attributeService.saveAttribute(attribute);
+
+                    parameter.setAttribute(attribute);
+                    parameterService.saveParameter(parameter);
+                }
+            }
             return attribute;
         }
         return null;

@@ -41,10 +41,14 @@ public class Attribute {
 
     @ManyToMany
     @JoinTable(name ="objectTypes_attribute",
-               joinColumns = @JoinColumn(name = "objectType_id"),
-               inverseJoinColumns = @JoinColumn(name = "attribute_id"))
+               joinColumns = @JoinColumn(name = "attribute_id"),
+               inverseJoinColumns = @JoinColumn(name = "objectType_id"))
     List<ObjectType> objectTypes;
 
     /*@OneToMany(mappedBy = "attribute")
     List<ObjectTypeAttribute> objectTypeAttributes;*/
+
+    @ManyToOne
+    @JoinColumn(name = "typeOfAttribute_id")
+    TypeOfAttribute typeOfAttribute;
 }

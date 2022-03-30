@@ -19,7 +19,8 @@ public class ObjectTypeController {
     AttributeService attributeService;
     ParameterService parameterService;
 
-    ObjectTypeController(ObjectTypeService objectTypeService,AttributeService attributeService,ParameterService parameterService){
+    ObjectTypeController(ObjectTypeService objectTypeService,AttributeService attributeService,
+                         ParameterService parameterService){
         super();
         this.objectTypeService=objectTypeService;
         this.attributeService=attributeService;
@@ -29,6 +30,10 @@ public class ObjectTypeController {
 
     @PostMapping
     ObjectType saveObject(@RequestBody ObjectType object){
+        if(object.getParentId()!=null&&objectTypeService.getById(object.getParentId()).isPresent()){
+            ObjectType parent=objectTypeService.getById(object.getParentId()).get();
+            object.setParent_id(parent);
+        }
         objectTypeService.saveObjectType(object);
 
         if (object.getAttributes()!=null){
@@ -66,68 +71,64 @@ public class ObjectTypeController {
     }
 
     @PutMapping("{id}")
-    ObjectType updateObjectType(@PathVariable("id") Long id,@RequestBody ObjectType objectTypeChance){
-        ObjectType objectType=objectTypeService.getById(id).get();
-        if(objectType!=null){
-            objectType.setName(objectTypeChance.getName());
-            objectType.setDescription(objectTypeChance.getDescription());
+    ObjectType updateObjectType(@PathVariable("id") Long id,
+                                @RequestBody ObjectType objectTypeChange){
+        if(objectTypeService.getById(id).isPresent()){
+            ObjectType objectType=objectTypeService.getById(id).get();
+            objectType.setName(objectTypeChange.getName());
+            objectType.setDescription(objectTypeChange.getDescription());
+            if(objectTypeService.getById(objectTypeChange.getParentId()).isPresent()){
+                ObjectType parent=objectTypeService.getById(objectTypeChange.getParentId()).get();
+                objectType.setParent_id(parent);
+            }
             return objectTypeService.saveObjectType(objectType);
         }
         return null;
     }
 
-    @PutMapping("/addAttribute/{idObT}")
-    ObjectType createAttributeForObjectType(@PathVariable("idObT") Long id,@RequestBody List<Attribute> attributes){
-        ObjectType objectType=objectTypeService.getById(id).get();
-        List<ObjectType> objectTypes=new ArrayList<>();
-        objectTypes.add(objectType);
-
-        List<Attribute> attributeList=new ArrayList<>();
-
-        for(int i=0;i<attributes.size();i++){
-            attributes.get(i).setObjectTypes(objectTypes);
-            attributeList.add(attributeService.saveAttribute(attributes.get(i)));
-        }
-        objectType.setAttributes(attributeList);
-        return objectTypeService.saveObjectType(objectType);
-    }
-
-    @PutMapping("/addAttribute/{idObT}/{idAt}")
-    ObjectType addAttributeInObjectType(@PathVariable("idObT") Long idObT,
-                                             @PathVariable("idAt") Long idAt) {
-
-        if(attributeService.findById(idAt).isPresent()&&objectTypeService.getById(idObT).isPresent()){
-            Attribute attribute=attributeService.findById(idAt).get();
-            ObjectType objectType=objectTypeService.getById(idObT).get();
+    @PutMapping("/createAttributeFor/{idObT}")
+    ObjectType createAttributeForObjectType(@PathVariable("idObT") Long id,
+                                            @RequestBody List<Attribute> attributes){
+        if(objectTypeService.getById(id).isPresent()){
+            ObjectType objectType=objectTypeService.getById(id).get();
             List<ObjectType> objectTypes=new ArrayList<>();
             objectTypes.add(objectType);
-            List<Attribute> attributes=new ArrayList<>();
-            attributes.add(attribute);
 
-            attribute.setObjectTypes(objectTypes);
-            attributeService.saveAttribute(attribute);
+            List<Attribute> attributeList=new ArrayList<>();
 
-            objectType.setAttributes(attributes);
-            objectTypeService.saveObjectType(objectType);
+            for (Attribute attribute : attributes) {
+                attribute.setObjectTypes(objectTypes);
+                attributeList.add(attributeService.saveAttribute(attribute));
+            }
+            objectType.setAttributes(attributeList);
+            return objectTypeService.saveObjectType(objectType);
+        }
+        return null;
+    }
+
+    @PutMapping("/addAttributeIn/{idObT}")
+    ObjectType addAttributeInObjectType(@PathVariable("idObT") Long idObT,
+                                        @RequestBody List<Long> attributesId) {
+
+        if(objectTypeService.getById(idObT).isPresent()){
+            ObjectType objectType=objectTypeService.getById(idObT).get();
+            for (Long aLong:attributesId){
+                if(attributeService.findById(aLong).isPresent()){
+                    Attribute attribute=attributeService.findById(aLong).get();
+                    List<ObjectType> objectTypes=new ArrayList<>();
+                    objectTypes.add(objectType);
+                    List<Attribute> attributes=new ArrayList<>();
+                    attributes.add(attribute);
+
+                    attribute.setObjectTypes(objectTypes);
+                    attributeService.saveAttribute(attribute);
+
+                    objectType.setAttributes(attributes);
+                    objectTypeService.saveObjectType(objectType);
+                }
+            }
             return objectType;
         }
         return null;
     }
-    /*@PutMapping("/addParameter/{idAt}")
-    Attribute updateObjectTypeAddParameters(@PathVariable("idAt") Long id,
-                                             @RequestBody List<Parameter> parameters){
-
-        Attribute attribute=attributeService.findById(id).get();
-        List<Attribute> attributes=new ArrayList<>();
-        attributes.add(attribute);
-
-        List<Parameter> parameterList=new ArrayList<>();
-
-        for(int i=0;i<parameters.size();i++){
-            parameters.get(i).setAttribute(attribute);
-            parameterList.add(parameterService.saveParameter(parameters.get(i)));
-        }
-        attribute.setParameters(parameterList);
-        return attributeService.saveAttribute(attribute);
-    }*/
 }

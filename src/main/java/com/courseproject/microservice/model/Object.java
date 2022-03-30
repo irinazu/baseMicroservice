@@ -40,4 +40,7 @@ public class Object {
     List<Attribute> attributes;
     /*@OneToMany(mappedBy = "object")
     List<ObjectAttribute> objectAttributes;*/
+
+    @Transient
+    Long parentId;
 }

@@ -14,9 +14,4 @@ public interface AttributeRepository extends JpaRepository<Attribute,Long> {
     @Override
     Optional<Attribute> findById(Long aLong);
 
-    @Transactional
-    List<Attribute> findAllByName(String name);
-
-    /*@Override
-    <S extends Attribute> List<S> saveAll(Iterable<S> entities);*/
 }

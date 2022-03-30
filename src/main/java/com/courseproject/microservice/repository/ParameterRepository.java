@@ -13,16 +13,11 @@ public interface ParameterRepository extends JpaRepository<Parameter,Long> {
     @Override
     List<Parameter> findAll();
 
-    @Transactional
-    List<Parameter> findAllByName(String name);
-
     @Override
     Optional<Parameter> findById(Long aLong);
 
     @Override
     void deleteById(Long aLong);
-
-    void deleteAllByAttribute(Attribute attribute);
 
     @Override
     <S extends Parameter> List<S> saveAll(Iterable<S> entities);

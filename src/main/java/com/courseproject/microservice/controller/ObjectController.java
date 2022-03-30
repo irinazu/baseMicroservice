@@ -34,7 +34,6 @@ public class ObjectController {
     }
 
     @PostMapping("{id}")
-    @CrossOrigin
     Object saveObject(@PathVariable Long id,@RequestBody Object object){
         ObjectType objectType=objectTypeService.getById(id).get();
 
@@ -71,13 +70,11 @@ public class ObjectController {
     }
 
     @GetMapping()
-    @CrossOrigin
     List<Object> getAllObject(){
         return objectService.getAllObjects();
     }
 
     @GetMapping("{id}")
-    @CrossOrigin
     Object getObjectById(@PathVariable("id") Long id){
         Optional<Object> opt=objectService.getObject(id);
         if(opt.isPresent()){
@@ -87,71 +84,66 @@ public class ObjectController {
         return null;
     }
 
-    @PutMapping("{id}")
-    @CrossOrigin
-    Object updateObject(@PathVariable("id") Long id,@RequestBody Object object){
-        Object object1=objectService.getObject(id).get();
-        object1.setName(object.getName());
-        object1.setDescription(object.getDescription());
-        return objectService.saveObject(object1);
-    }
-
-    @PutMapping("/addAttribute/{id}")
-    @CrossOrigin
-    Object createAttributeFroObject(@PathVariable("id") Long id,@RequestBody List<Attribute> attributes){
-        Object object=objectService.getObject(id).get();
-        List<Object> objects=new ArrayList<>();
-        objects.add(object);
-
-        List<Attribute> attributeList=new ArrayList<>();
-
-        for(int i=0;i<attributes.size();i++){
-            attributes.get(i).setObjects(objects);
-            attributeList.add(attributeService.saveAttribute(attributes.get(i)));
-        }
-        object.setAttributes(attributeList);
-        return objectService.saveObject(object);
-    }
-
-    @PutMapping("/addAttribute/{idOb}/{idAt}")
-    Object addAttributeInObject(@PathVariable("idOb") Long idObT,
-                                             @PathVariable("idAt") Long idAt) {
-
-        if(attributeService.findById(idAt).isPresent()&&objectService.getObject(idObT).isPresent()){
-            Attribute attribute=attributeService.findById(idAt).get();
-            Object object=objectService.getObject(idObT).get();
-            List<Object> objects=new ArrayList<>();
-            objects.add(object);
-            List<Attribute> attributes=new ArrayList<>();
-            attributes.add(attribute);
-
-            attribute.setObjects(objects);
-            attributeService.saveAttribute(attribute);
-
-            object.setAttributes(attributes);
-            objectService.saveObject(object);
-            return object;
+    @PutMapping("{ObTid}")
+    Object updateObject(@PathVariable("ObTid") Long ObTid,@RequestBody Object object){
+        if(objectService.getObject(ObTid).isPresent()){
+            Object object1=objectService.getObject(ObTid).get();
+            object1.setName(object.getName());
+            object1.setDescription(object.getDescription());
+            if(objectService.getObject(object.getParentId()).isPresent()){
+                Object parent=objectService.getObject(object.getParentId()).get();
+                object1.setParent_id(parent);
+            }
+            return objectService.saveObject(object1);
         }
         return null;
     }
 
-    /*@PutMapping("/addParameter/{idAt}")
-    @CrossOrigin
-    Attribute updateObjectAddParameters(@PathVariable("idAt") Long id,@RequestBody List<Parameter> parameters){
-        Attribute attribute=attributeService.findById(id).get();
-        List<Attribute> attributes=new ArrayList<>();
-        attributes.add(attribute);
+    @PutMapping("/createAttributeFor/{id}")
+    Object createAttributeForObject(@PathVariable("id") Long id,
+                                    @RequestBody List<Attribute> attributes){
+        if(objectService.getObject(id).isPresent()){
+            Object object=objectService.getObject(id).get();
+            List<Object> objects=new ArrayList<>();
+            objects.add(object);
 
-        List<Parameter> parameterList=new ArrayList<>();
+            List<Attribute> attributeList=new ArrayList<>();
 
-        for(int i=0;i<parameters.size();i++){
-            parameters.get(i).setAttribute(attribute);
-            parameterList.add(parameterService.saveParameter(parameters.get(i)));
+            for (Attribute attribute : attributes) {
+                attribute.setObjects(objects);
+                attributeList.add(attributeService.saveAttribute(attribute));
+            }
+            object.setAttributes(attributeList);
+            return objectService.saveObject(object);
         }
-        attribute.setParameters(parameterList);
-        return attributeService.saveAttribute(attribute);
-    }*/
+        return null;
+    }
 
+    @PutMapping("/addAttributeIn/{idOb}")
+    Object addAttributeInObject(@PathVariable("idOb") Long idObT,
+                                @RequestBody List<Long> attributesId) {
+
+        if(objectService.getObject(idObT).isPresent()){
+            Object object=objectService.getObject(idObT).get();
+            for(Long aLong:attributesId){
+                if(attributeService.findById(aLong).isPresent()){
+                    Attribute attribute=attributeService.findById(aLong).get();
+                    List<Object> objects=new ArrayList<>();
+                    objects.add(object);
+                    List<Attribute> attributes=new ArrayList<>();
+                    attributes.add(attribute);
+
+                    attribute.setObjects(objects);
+                    attributeService.saveAttribute(attribute);
+
+                    object.setAttributes(attributes);
+                    objectService.saveObject(object);
+                }
+            }
+            return object;
+        }
+        return null;
+    }
 
     @DeleteMapping("{id}")
     @CrossOrigin

@@ -40,5 +40,8 @@ public class ObjectType {
 
     /*@OneToMany(mappedBy = "objectType")
     List<ObjectTypeAttribute> objectTypeAttributes;*/
+
+    @Transient
+    Long parentId;
 }
 

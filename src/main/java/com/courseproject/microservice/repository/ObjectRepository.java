@@ -16,16 +16,8 @@ public interface ObjectRepository extends JpaRepository<Object,Long> {
     @Override
     List<Object> findAll();
 
-    @Transactional
-    List<Object> findAllByName(String name);
-
     @Override
     Optional<Object> findById(Long aLong);
-
-    //Object findById(Object object);
-
-    @Transactional
-    List<Object> findAllByDescription(String desc);
 
     @Override
     void deleteById(Long aLong);
