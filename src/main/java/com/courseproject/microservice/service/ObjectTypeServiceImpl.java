@@ -1,9 +1,12 @@
 package com.courseproject.microservice.service;
 
+import com.courseproject.microservice.controller.ObjectTypeController;
 import com.courseproject.microservice.model.ObjectType;
 import com.courseproject.microservice.repository.ObjectRepository;
 import com.courseproject.microservice.repository.ObjectTypeRepository;
 import org.springframework.stereotype.Service;
+import org.slf4j.*;
+
 
 import java.util.List;
 import java.util.Optional;

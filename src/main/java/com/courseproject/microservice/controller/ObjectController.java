@@ -5,36 +5,44 @@ import com.courseproject.microservice.model.Object;
 import com.courseproject.microservice.model.ObjectType;
 import com.courseproject.microservice.model.Parameter;
 import com.courseproject.microservice.service.*;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/objects")
 @CrossOrigin
 public class ObjectController {
+    private static final Logger logger= LoggerFactory.getLogger(ObjectController.class);
+    private final ObjectMapper mapper;
+
     ObjectTypeService objectTypeService;
     ObjectService objectService;
     AttributeService attributeService;
     ParameterService parameterService;
 
     ObjectController(ObjectService objectService,AttributeService attributeService,
-                     ParameterService parameterService, ObjectTypeService objectTypeService){
+                     ParameterService parameterService, ObjectTypeService objectTypeService,
+                     ObjectMapper mapper){
         super();
         this.objectService=objectService;
         this.attributeService = attributeService;
         this.parameterService=parameterService;
         this.objectTypeService=objectTypeService;
+        this.mapper=mapper;
 
     }
 
     @PostMapping("{id}")
     Object saveObject(@PathVariable Long id,@RequestBody Object object){
+        logger.info("Enter in method saveObject()");
+        logger.info("Object{}", object);
+
         ObjectType objectType=objectTypeService.getById(id).get();
 
         if(objectTypeService.getById(id).isPresent()) {
@@ -65,27 +73,43 @@ public class ObjectController {
                 }
             }
         }
-            return object;
+        logger.info("Go out from method saveObject()");
+
+        return object;
 
     }
 
     @GetMapping()
-    List<Object> getAllObject(){
+    List<Object> getAllObject() throws JsonProcessingException {
+        logger.info("Enter in method getAllObject()");
+        logger.info("List<Object> {}", mapper.writeValueAsString(objectService.getAllObjects()));
+        logger.info("Go out from method getAllObject()");
+
         return objectService.getAllObjects();
     }
 
     @GetMapping("{id}")
-    Object getObjectById(@PathVariable("id") Long id){
-        Optional<Object> opt=objectService.getObject(id);
-        if(opt.isPresent()){
-            Object object=opt.get();
+    Object getObjectById(@PathVariable("id") Long id) throws JsonProcessingException {
+        logger.info("Enter in method getObjectById()");
+        logger.info("Object {}", mapper.writeValueAsString(objectService.getAllObjects()));
+
+        if(objectService.getObject(id).isPresent()){
+            Object object=objectService.getObject(id).get();
+
+            logger.info("Go out from method getObjectById()");
+
             return object;
         }
+        logger.info("Go out from method getObjectById()");
+
         return null;
     }
 
     @PutMapping("{ObTid}")
     Object updateObject(@PathVariable("ObTid") Long ObTid,@RequestBody Object object){
+        logger.info("Enter in method updateObject()");
+        logger.info("Object {}", object);
+
         if(objectService.getObject(ObTid).isPresent()){
             Object object1=objectService.getObject(ObTid).get();
             object1.setName(object.getName());
@@ -94,14 +118,23 @@ public class ObjectController {
                 Object parent=objectService.getObject(object.getParentId()).get();
                 object1.setParent_id(parent);
             }
+            logger.info("Go out from method updateObject()");
+
             return objectService.saveObject(object1);
         }
+        logger.info("Go out from method updateObject()");
+
         return null;
     }
 
     @PutMapping("/createAttributeFor/{id}")
     Object createAttributeForObject(@PathVariable("id") Long id,
-                                    @RequestBody List<Attribute> attributes){
+                                    @RequestBody List<Attribute> attributes) throws JsonProcessingException {
+        logger.info("Enter in method createAttributeForObject()");
+        logger.info("Object {}", mapper.writeValueAsString(objectService.getObject(id).get()));
+        logger.info("List<Attribute> {}", attributes);
+
+
         if(objectService.getObject(id).isPresent()){
             Object object=objectService.getObject(id).get();
             List<Object> objects=new ArrayList<>();
@@ -114,14 +147,21 @@ public class ObjectController {
                 attributeList.add(attributeService.saveAttribute(attribute));
             }
             object.setAttributes(attributeList);
+            logger.info("Go out from method createAttributeForObject()");
+
             return objectService.saveObject(object);
         }
+        logger.info("Go out from method createAttributeForObject()");
+
         return null;
     }
 
     @PutMapping("/addAttributeIn/{idOb}")
     Object addAttributeInObject(@PathVariable("idOb") Long idObT,
-                                @RequestBody List<Long> attributesId) {
+                                @RequestBody List<Long> attributesId) throws JsonProcessingException {
+        logger.info("Enter in method addAttributeInObject()");
+        logger.info("Object {}", mapper.writeValueAsString(objectService.getObject(idObT).get()));
+        logger.info("List<Long> {}", attributesId);
 
         if(objectService.getObject(idObT).isPresent()){
             Object object=objectService.getObject(idObT).get();
@@ -140,14 +180,43 @@ public class ObjectController {
                     objectService.saveObject(object);
                 }
             }
+            logger.info("Go out from method addAttributeInObject()");
+
             return object;
         }
+        logger.info("Go out from method addAttributeInObject()");
+
         return null;
     }
 
     @DeleteMapping("{id}")
     @CrossOrigin
-    void deleteObject(@PathVariable("id") Long id){
-        objectService.deleteObject(id);
+    void deleteObject(@PathVariable("id") Long id) throws JsonProcessingException {
+        logger.info("Enter in method deleteObject()");
+        logger.info("Object {}", mapper.writeValueAsString(objectService.getObject(id).get()));
+
+        if(objectService.getObject(id).isPresent()){
+            objectService.deleteObject(id);
+        }
+        logger.info("Go out from method deleteObject()");
+
     }
+
+    @GetMapping("/getAttributesForObject/{id}")
+    List<Attribute> getAttributesForObject(@PathVariable("id") Long id) throws JsonProcessingException {
+        logger.info("Enter in method getAttributesForObject()");
+        logger.info("Object {}", mapper.writeValueAsString(objectService.getObject(id).get()));
+
+        if(objectService.getObject(id).isPresent()){
+            logger.info("Go out from method getAttributesForObject()");
+
+            return objectService.getObject(id).get().getAttributes();
+        }
+        logger.info("Go out from method getAttributesForObject()");
+
+        return null;
+    }
+
+
+
 }
