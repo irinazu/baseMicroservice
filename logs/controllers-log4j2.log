@@ -1,0 +1,1389 @@
+2022-04-01 21:54:22,771 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Starting MicroserviceApplication using Java 15.0.4 on Laptop15Irina with PID 7356 (C:\Users\IraZ\OneDrive\Рабочий стол\microservice\target\classes started by IraZ in C:\Users\IraZ\OneDrive\Рабочий стол\microservice)
+2022-04-01 21:54:22,778 INFO [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2022-04-01 21:54:22,812 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-01 21:54:22,813 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-01 21:54:23,418 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-01 21:54:23,483 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 57 ms. Found 5 JPA repository interfaces.
+2022-04-01 21:54:23,935 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2022-04-01 21:54:23,943 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-01 21:54:23,943 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2022-04-01 21:54:23,944 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-01 21:54:24,037 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2022-04-01 21:54:24,037 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1223 ms
+2022-04-01 21:54:24,153 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-01 21:54:24,189 INFO [restartedMain] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-01 21:54:24,294 INFO [restartedMain] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-01 21:54:24,370 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2022-04-01 21:54:24,539 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2022-04-01 21:54:24,557 INFO [restartedMain] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-01 21:54:25,208 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-01 21:54:25,217 INFO [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 21:54:25,533 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-01 21:54:25,801 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2022-04-01 21:54:25,817 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2022-04-01 21:54:25,840 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-01 21:54:25,849 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Started MicroserviceApplication in 3.378 seconds (JVM running for 4.575)
+2022-04-01 21:54:39,545 INFO [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-01 21:54:39,546 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2022-04-01 21:54:39,547 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 1 ms
+2022-04-01 21:54:39,577 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: Enter in method getObjectTypeById()
+2022-04-01 21:54:39,627 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: ObjectType[!!!com.courseproject.microservice.model.ObjectType@240b6ed3=>java.lang.StackOverflowError:null!!!]
+2022-04-01 21:54:39,653 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: Go out from method getObjectTypeById()
+2022-04-01 21:54:44,786 INFO [http-nio-8080-exec-4] com.courseproject.microservice.controller.ObjectTypeController: Enter in method saveObjectType()
+2022-04-01 21:54:44,786 INFO [http-nio-8080-exec-4] com.courseproject.microservice.controller.ObjectTypeController: ObjectObjectType(id=null, name=null, description=null, parent_id=null, objects=null, attributes=null, parentId=null)
+2022-04-01 21:54:44,813 INFO [http-nio-8080-exec-4] com.courseproject.microservice.controller.ObjectTypeController: Go out from method saveObjectType()
+2022-04-01 21:58:31,606 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 21:58:31,608 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2022-04-01 21:58:31,614 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2022-04-01 21:58:36,970 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Starting MicroserviceApplication using Java 15.0.4 on Laptop15Irina with PID 14900 (C:\Users\IraZ\OneDrive\Рабочий стол\microservice\target\classes started by IraZ in C:\Users\IraZ\OneDrive\Рабочий стол\microservice)
+2022-04-01 21:58:36,977 INFO [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2022-04-01 21:58:37,010 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-01 21:58:37,011 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-01 21:58:37,609 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-01 21:58:37,675 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+2022-04-01 21:58:38,128 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2022-04-01 21:58:38,136 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-01 21:58:38,136 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2022-04-01 21:58:38,136 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-01 21:58:38,224 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2022-04-01 21:58:38,224 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1212 ms
+2022-04-01 21:58:38,334 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-01 21:58:38,371 INFO [restartedMain] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-01 21:58:38,474 INFO [restartedMain] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-01 21:58:38,548 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2022-04-01 21:58:38,715 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2022-04-01 21:58:38,733 INFO [restartedMain] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-01 21:58:39,368 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-01 21:58:39,375 INFO [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 21:58:39,663 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-01 21:58:39,909 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2022-04-01 21:58:39,925 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2022-04-01 21:58:39,947 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-01 21:58:39,956 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Started MicroserviceApplication in 3.25 seconds (JVM running for 4.427)
+2022-04-01 21:58:52,716 INFO [http-nio-8080-exec-3] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-01 21:58:52,716 INFO [http-nio-8080-exec-3] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2022-04-01 21:58:52,717 INFO [http-nio-8080-exec-3] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 1 ms
+2022-04-01 21:58:52,743 INFO [http-nio-8080-exec-3] com.courseproject.microservice.controller.ObjectTypeController: Enter in method getObjectTypeById()
+2022-04-01 21:58:52,792 INFO [http-nio-8080-exec-3] com.courseproject.microservice.controller.ObjectTypeController: ObjectType[!!!com.courseproject.microservice.model.ObjectType@12051504=>java.lang.StackOverflowError:null!!!]
+2022-04-01 21:58:52,817 INFO [http-nio-8080-exec-3] com.courseproject.microservice.controller.ObjectTypeController: Go out from method getObjectTypeById()
+2022-04-01 22:01:59,332 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 22:01:59,334 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2022-04-01 22:01:59,339 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2022-04-01 22:02:05,294 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Starting MicroserviceApplication using Java 15.0.4 on Laptop15Irina with PID 20936 (C:\Users\IraZ\OneDrive\Рабочий стол\microservice\target\classes started by IraZ in C:\Users\IraZ\OneDrive\Рабочий стол\microservice)
+2022-04-01 22:02:05,304 INFO [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2022-04-01 22:02:05,344 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-01 22:02:05,344 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-01 22:02:05,940 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-01 22:02:06,002 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
+2022-04-01 22:02:06,464 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2022-04-01 22:02:06,471 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-01 22:02:06,472 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2022-04-01 22:02:06,472 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-01 22:02:06,551 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2022-04-01 22:02:06,551 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1205 ms
+2022-04-01 22:02:06,666 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-01 22:02:06,703 INFO [restartedMain] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-01 22:02:06,809 INFO [restartedMain] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-01 22:02:06,885 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2022-04-01 22:02:07,052 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2022-04-01 22:02:07,069 INFO [restartedMain] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-01 22:02:07,712 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-01 22:02:07,720 INFO [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 22:02:08,024 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-01 22:02:08,269 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2022-04-01 22:02:08,285 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2022-04-01 22:02:08,308 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-01 22:02:08,317 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Started MicroserviceApplication in 3.307 seconds (JVM running for 4.336)
+2022-04-01 22:02:21,819 INFO [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-01 22:02:21,819 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2022-04-01 22:02:21,820 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 0 ms
+2022-04-01 22:02:21,850 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: Enter in method getObjectTypeById()
+2022-04-01 22:02:21,900 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: ObjectType [!!!com.courseproject.microservice.model.ObjectType@68ea2db2=>java.lang.StackOverflowError:null!!!]
+2022-04-01 22:02:21,922 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: Go out from method getObjectTypeById()
+2022-04-01 22:02:53,979 INFO [http-nio-8080-exec-3] com.courseproject.microservice.controller.ObjectTypeController: Enter in method getAllObjectType()
+2022-04-01 22:02:54,065 INFO [http-nio-8080-exec-3] com.courseproject.microservice.controller.ObjectTypeController: List<ObjectType> [[!!!com.courseproject.microservice.model.ObjectType@47476398=>java.lang.StackOverflowError:null!!!], [!!!com.courseproject.microservice.model.ObjectType@76fb4d95=>java.lang.StackOverflowError:null!!!], [!!!com.courseproject.microservice.model.ObjectType@69e13fab=>java.lang.StackOverflowError:null!!!], [!!!com.courseproject.microservice.model.ObjectType@93e3c4d=>java.lang.StackOverflowError:null!!!], [!!!com.courseproject.microservice.model.ObjectType@7519c551=>java.lang.StackOverflowError:null!!!], [!!!com.courseproject.microservice.model.ObjectType@5922b982=>java.lang.StackOverflowError:null!!!], [!!!com.courseproject.microservice.model.ObjectType@39ded96a=>java.lang.StackOverflowError:null!!!], [!!!com.courseproject.microservice.model.ObjectType@41fa5648=>java.lang.StackOverflowError:null!!!], ObjectType(id=9, name=null, description=null, parent_id=null, objects=[], attributes=[], parentId=null), ObjectType(id=10, name=null, description=null, parent_id=null, objects=[], attributes=[], parentId=null)]
+2022-04-01 22:02:54,089 INFO [http-nio-8080-exec-3] com.courseproject.microservice.controller.ObjectTypeController: Go out from method getAllObjectType()
+2022-04-01 22:03:24,083 INFO [http-nio-8080-exec-4] com.courseproject.microservice.controller.ObjectTypeController: Enter in method saveObjectType()
+2022-04-01 22:03:24,084 INFO [http-nio-8080-exec-4] com.courseproject.microservice.controller.ObjectTypeController: ObjectType ObjectType(id=null, name=null, description=null, parent_id=null, objects=null, attributes=null, parentId=null)
+2022-04-01 22:03:24,107 INFO [http-nio-8080-exec-4] com.courseproject.microservice.controller.ObjectTypeController: Go out from method saveObjectType()
+2022-04-01 22:03:46,814 INFO [http-nio-8080-exec-5] com.courseproject.microservice.controller.ObjectTypeController: Enter in method saveObjectType()
+2022-04-01 22:03:46,814 INFO [http-nio-8080-exec-5] com.courseproject.microservice.controller.ObjectTypeController: ObjectType ObjectType(id=null, name=MegaAnimal, description=null, parent_id=null, objects=null, attributes=null, parentId=null)
+2022-04-01 22:03:46,818 INFO [http-nio-8080-exec-5] com.courseproject.microservice.controller.ObjectTypeController: Go out from method saveObjectType()
+2022-04-01 22:05:36,043 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 22:05:36,046 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2022-04-01 22:05:36,053 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2022-04-01 22:05:41,613 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Starting MicroserviceApplication using Java 15.0.4 on Laptop15Irina with PID 21956 (C:\Users\IraZ\OneDrive\Рабочий стол\microservice\target\classes started by IraZ in C:\Users\IraZ\OneDrive\Рабочий стол\microservice)
+2022-04-01 22:05:41,621 INFO [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2022-04-01 22:05:41,656 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-01 22:05:41,656 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-01 22:05:42,204 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-01 22:05:42,264 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 52 ms. Found 5 JPA repository interfaces.
+2022-04-01 22:05:42,754 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2022-04-01 22:05:42,765 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-01 22:05:42,766 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2022-04-01 22:05:42,766 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-01 22:05:42,857 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2022-04-01 22:05:42,857 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1200 ms
+2022-04-01 22:05:42,966 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-01 22:05:43,011 INFO [restartedMain] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-01 22:05:43,125 INFO [restartedMain] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-01 22:05:43,201 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2022-04-01 22:05:43,393 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2022-04-01 22:05:43,412 INFO [restartedMain] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-01 22:05:44,063 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-01 22:05:44,070 INFO [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 22:05:44,363 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-01 22:05:44,621 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2022-04-01 22:05:44,637 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2022-04-01 22:05:44,660 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-01 22:05:44,669 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Started MicroserviceApplication in 3.353 seconds (JVM running for 4.401)
+2022-04-01 22:05:52,176 INFO [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-01 22:05:52,176 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2022-04-01 22:05:52,177 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 0 ms
+2022-04-01 22:05:52,203 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: Enter in method getObjectTypeById()
+2022-04-01 22:05:52,285 ERROR [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.StackOverflowError] with root cause
+java.lang.StackOverflowError
+	at java.base/java.lang.Long.toString(Long.java:486)
+	at java.base/java.lang.Long.toString(Long.java:1412)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.ObjectType.toString(ObjectType.java:15)
+	at java.base/java.lang.String.valueOf(String.java:3367)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:167)
+	at java.base/java.util.AbstractCollection.toString(AbstractCollection.java:457)
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:622)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:429)
+	at com.courseproject.microservice.model.Attribute.toString(Attribute.java:15)
+2022-04-01 22:06:48,077 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 22:06:48,079 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2022-04-01 22:06:48,087 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2022-04-01 22:06:53,836 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Starting MicroserviceApplication using Java 15.0.4 on Laptop15Irina with PID 21032 (C:\Users\IraZ\OneDrive\Рабочий стол\microservice\target\classes started by IraZ in C:\Users\IraZ\OneDrive\Рабочий стол\microservice)
+2022-04-01 22:06:53,843 INFO [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2022-04-01 22:06:53,876 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-01 22:06:53,877 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-01 22:06:54,428 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-01 22:06:54,490 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
+2022-04-01 22:06:54,960 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2022-04-01 22:06:54,972 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-01 22:06:54,973 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2022-04-01 22:06:54,973 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-01 22:06:55,045 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2022-04-01 22:06:55,045 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1168 ms
+2022-04-01 22:06:55,153 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-01 22:06:55,189 INFO [restartedMain] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-01 22:06:55,293 INFO [restartedMain] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-01 22:06:55,368 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2022-04-01 22:06:55,534 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2022-04-01 22:06:55,552 INFO [restartedMain] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-01 22:06:56,211 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-01 22:06:56,219 INFO [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 22:06:56,558 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-01 22:06:56,826 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2022-04-01 22:06:56,841 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2022-04-01 22:06:56,864 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-01 22:06:56,873 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Started MicroserviceApplication in 3.312 seconds (JVM running for 4.328)
+2022-04-01 22:06:58,602 INFO [http-nio-8080-exec-2] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-01 22:06:58,603 INFO [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2022-04-01 22:06:58,605 INFO [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 2 ms
+2022-04-01 22:06:58,631 INFO [http-nio-8080-exec-2] com.courseproject.microservice.controller.ObjectTypeController: Enter in method getObjectTypeById()
+2022-04-01 22:06:58,678 INFO [http-nio-8080-exec-2] com.courseproject.microservice.controller.ObjectTypeController: ObjectType [!!!com.courseproject.microservice.model.ObjectType@5e7f941c=>java.lang.StackOverflowError:null!!!]
+2022-04-01 22:06:58,700 INFO [http-nio-8080-exec-2] com.courseproject.microservice.controller.ObjectTypeController: Go out from method getObjectTypeById()
+2022-04-01 22:10:59,563 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 22:10:59,566 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2022-04-01 22:10:59,570 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2022-04-01 22:11:05,500 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Starting MicroserviceApplication using Java 15.0.4 on Laptop15Irina with PID 18532 (C:\Users\IraZ\OneDrive\Рабочий стол\microservice\target\classes started by IraZ in C:\Users\IraZ\OneDrive\Рабочий стол\microservice)
+2022-04-01 22:11:05,508 INFO [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2022-04-01 22:11:05,541 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-01 22:11:05,541 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-01 22:11:06,167 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-01 22:11:06,226 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 52 ms. Found 5 JPA repository interfaces.
+2022-04-01 22:11:06,714 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2022-04-01 22:11:06,721 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-01 22:11:06,722 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2022-04-01 22:11:06,722 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-01 22:11:06,806 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2022-04-01 22:11:06,806 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1264 ms
+2022-04-01 22:11:06,918 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-01 22:11:06,954 INFO [restartedMain] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-01 22:11:07,072 INFO [restartedMain] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-01 22:11:07,161 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2022-04-01 22:11:07,348 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2022-04-01 22:11:07,366 INFO [restartedMain] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-01 22:11:08,065 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-01 22:11:08,072 INFO [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 22:11:08,367 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-01 22:11:08,639 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2022-04-01 22:11:08,655 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2022-04-01 22:11:08,680 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-01 22:11:08,689 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Started MicroserviceApplication in 3.469 seconds (JVM running for 4.514)
+2022-04-01 22:11:20,269 INFO [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-01 22:11:20,270 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2022-04-01 22:11:20,270 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 0 ms
+2022-04-01 22:11:20,299 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: Enter in method getObjectTypeById()
+2022-04-01 22:11:20,348 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: ObjectType [!!!com.courseproject.microservice.model.ObjectType@146371bd=>java.lang.StackOverflowError:null!!!]
+2022-04-01 22:11:20,372 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: Go out from method getObjectTypeById()
+2022-04-01 22:18:06,181 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 22:18:06,184 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2022-04-01 22:18:06,191 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2022-04-01 22:18:11,889 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Starting MicroserviceApplication using Java 15.0.4 on Laptop15Irina with PID 16088 (C:\Users\IraZ\OneDrive\Рабочий стол\microservice\target\classes started by IraZ in C:\Users\IraZ\OneDrive\Рабочий стол\microservice)
+2022-04-01 22:18:11,897 INFO [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2022-04-01 22:18:11,931 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-01 22:18:11,931 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-01 22:18:12,497 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-01 22:18:12,558 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
+2022-04-01 22:18:13,019 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2022-04-01 22:18:13,026 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-01 22:18:13,026 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2022-04-01 22:18:13,026 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-01 22:18:13,111 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2022-04-01 22:18:13,112 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1180 ms
+2022-04-01 22:18:13,220 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-01 22:18:13,257 INFO [restartedMain] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-01 22:18:13,373 INFO [restartedMain] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-01 22:18:13,454 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2022-04-01 22:18:13,641 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2022-04-01 22:18:13,659 INFO [restartedMain] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-01 22:18:14,374 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-01 22:18:14,383 INFO [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 22:18:14,690 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-01 22:18:14,946 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2022-04-01 22:18:14,962 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2022-04-01 22:18:14,984 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-01 22:18:14,994 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Started MicroserviceApplication in 3.39 seconds (JVM running for 4.421)
+2022-04-01 22:18:16,431 INFO [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-01 22:18:16,431 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2022-04-01 22:18:16,432 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 1 ms
+2022-04-01 22:18:16,459 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: Enter in method getObjectTypeById()
+2022-04-01 22:18:16,505 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: objectType [!!!com.courseproject.microservice.model.ObjectType@7c20d80f=>java.lang.StackOverflowError:null!!!]
+2022-04-01 22:18:16,530 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: Go out from method getObjectTypeById()
+2022-04-01 22:18:38,026 INFO [http-nio-8080-exec-4] com.courseproject.microservice.controller.ObjectTypeController: Enter in method getObjectTypeById()
+2022-04-01 22:18:38,028 INFO [http-nio-8080-exec-4] com.courseproject.microservice.controller.ObjectTypeController: objectType [!!!com.courseproject.microservice.model.ObjectType@275ece50=>java.lang.StackOverflowError:null!!!]
+2022-04-01 22:18:38,036 INFO [http-nio-8080-exec-4] com.courseproject.microservice.controller.ObjectTypeController: Go out from method getObjectTypeById()
+2022-04-01 22:19:31,013 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 22:19:31,015 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2022-04-01 22:19:31,021 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2022-04-01 22:19:36,523 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Starting MicroserviceApplication using Java 15.0.4 on Laptop15Irina with PID 12124 (C:\Users\IraZ\OneDrive\Рабочий стол\microservice\target\classes started by IraZ in C:\Users\IraZ\OneDrive\Рабочий стол\microservice)
+2022-04-01 22:19:36,532 INFO [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2022-04-01 22:19:36,566 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-01 22:19:36,567 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-01 22:19:37,136 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-01 22:19:37,200 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 56 ms. Found 5 JPA repository interfaces.
+2022-04-01 22:19:37,676 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2022-04-01 22:19:37,683 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-01 22:19:37,683 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2022-04-01 22:19:37,684 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-01 22:19:37,780 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2022-04-01 22:19:37,780 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1212 ms
+2022-04-01 22:19:37,904 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-01 22:19:37,941 INFO [restartedMain] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-01 22:19:38,062 INFO [restartedMain] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-01 22:19:38,142 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2022-04-01 22:19:38,314 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2022-04-01 22:19:38,332 INFO [restartedMain] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-01 22:19:38,985 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-01 22:19:38,993 INFO [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 22:19:39,290 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-01 22:19:39,553 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2022-04-01 22:19:39,569 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2022-04-01 22:19:39,592 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-01 22:19:39,602 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Started MicroserviceApplication in 3.357 seconds (JVM running for 4.362)
+2022-04-01 22:19:41,556 INFO [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-01 22:19:41,556 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2022-04-01 22:19:41,557 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 1 ms
+2022-04-01 22:19:41,583 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: Enter in method getObjectTypeById()
+2022-04-01 22:19:41,628 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: objectType 1
+2022-04-01 22:19:41,629 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: Go out from method getObjectTypeById()
+2022-04-01 22:20:33,246 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 22:20:33,248 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2022-04-01 22:20:33,253 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2022-04-02 10:14:50,082 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Starting MicroserviceApplication using Java 15.0.4 on Laptop15Irina with PID 13272 (C:\Users\IraZ\OneDrive\Рабочий стол\microservice\target\classes started by IraZ in C:\Users\IraZ\OneDrive\Рабочий стол\microservice)
+2022-04-02 10:14:50,095 INFO [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2022-04-02 10:14:50,148 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-02 10:14:50,149 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-02 10:14:51,034 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-02 10:14:51,136 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 83 ms. Found 5 JPA repository interfaces.
+2022-04-02 10:14:51,849 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2022-04-02 10:14:51,865 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-02 10:14:51,865 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2022-04-02 10:14:51,866 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-02 10:14:51,974 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2022-04-02 10:14:51,975 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1825 ms
+2022-04-02 10:14:52,162 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-02 10:14:52,262 INFO [restartedMain] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-02 10:14:52,569 INFO [restartedMain] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-02 10:14:52,692 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2022-04-02 10:14:53,051 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2022-04-02 10:14:53,079 INFO [restartedMain] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-02 10:14:54,309 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-02 10:14:54,320 INFO [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-02 10:14:54,828 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-02 10:14:55,205 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2022-04-02 10:14:55,234 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2022-04-02 10:14:55,263 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-02 10:14:55,274 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Started MicroserviceApplication in 5.622 seconds (JVM running for 8.003)
+2022-04-02 10:15:02,670 INFO [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-02 10:15:02,670 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2022-04-02 10:15:02,671 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 1 ms
+2022-04-02 10:15:02,699 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: Enter in method getObjectTypeById()
+2022-04-02 10:15:02,830 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: objectType {"id":1,"name":"MegaAnimal","description":null,"parent_id":null,"objects":[],"attributes":[{"id":1,"name":"power","parameters":[],"objects":[],"objectTypes":[1],"typeOfAttribute":null}],"parentId":null}
+2022-04-02 10:15:02,831 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectTypeController: Go out from method getObjectTypeById()
+2022-04-02 10:15:28,362 INFO [http-nio-8080-exec-2] com.courseproject.microservice.controller.ObjectTypeController: Enter in method getAllObjectType()
+2022-04-02 10:15:28,507 INFO [http-nio-8080-exec-2] com.courseproject.microservice.controller.ObjectTypeController: List<ObjectType> [{"id":1,"name":"MegaAnimal","description":null,"parent_id":null,"objects":[],"attributes":[{"id":1,"name":"power","parameters":[],"objects":[],"objectTypes":[1],"typeOfAttribute":null}],"parentId":null},{"id":2,"name":"MegaAnimal","description":null,"parent_id":null,"objects":[],"attributes":[{"id":2,"name":"power","parameters":[],"objects":[],"objectTypes":[2],"typeOfAttribute":null}],"parentId":null},{"id":3,"name":"MegaAnimal","description":null,"parent_id":2,"objects":[],"attributes":[{"id":3,"name":"power","parameters":[],"objects":[],"objectTypes":[3],"typeOfAttribute":null}],"parentId":null},{"id":4,"name":"MegaAnimal","description":null,"parent_id":2,"objects":[],"attributes":[{"id":4,"name":"power","parameters":[],"objects":[],"objectTypes":[4],"typeOfAttribute":null}],"parentId":null},{"id":5,"name":"MegaAnimal","description":null,"parent_id":2,"objects":[],"attributes":[{"id":5,"name":"power","parameters":[],"objects":[],"objectTypes":[5],"typeOfAttribute":null}],"parentId":null},{"id":6,"name":"MegaAnimal","description":null,"parent_id":2,"objects":[],"attributes":[{"id":6,"name":"power","parameters":[],"objects":[],"objectTypes":[6],"typeOfAttribute":null}],"parentId":null},{"id":7,"name":"MegaAnimal","description":null,"parent_id":2,"objects":[],"attributes":[{"id":7,"name":"power","parameters":[],"objects":[],"objectTypes":[7],"typeOfAttribute":null}],"parentId":null},{"id":8,"name":"MegaAnimal","description":null,"parent_id":2,"objects":[],"attributes":[{"id":8,"name":"power","parameters":[],"objects":[],"objectTypes":[8],"typeOfAttribute":null}],"parentId":null},{"id":9,"name":null,"description":null,"parent_id":null,"objects":[],"attributes":[],"parentId":null},{"id":10,"name":null,"description":null,"parent_id":null,"objects":[],"attributes":[],"parentId":null},{"id":11,"name":null,"description":null,"parent_id":null,"objects":[],"attributes":[],"parentId":null},{"id":12,"name":"MegaAnimal","description":null,"parent_id":null,"objects":[],"attributes":[],"parentId":null}]
+2022-04-02 10:15:28,507 INFO [http-nio-8080-exec-2] com.courseproject.microservice.controller.ObjectTypeController: Go out from method getAllObjectType()
+2022-04-02 10:22:09,796 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-02 10:22:09,801 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2022-04-02 10:22:09,812 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2022-04-02 10:29:59,182 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Starting MicroserviceApplication using Java 15.0.4 on Laptop15Irina with PID 6736 (C:\Users\IraZ\OneDrive\Рабочий стол\microservice\target\classes started by IraZ in C:\Users\IraZ\OneDrive\Рабочий стол\microservice)
+2022-04-02 10:29:59,189 INFO [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2022-04-02 10:29:59,227 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-02 10:29:59,227 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-02 10:29:59,807 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-02 10:29:59,878 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 57 ms. Found 5 JPA repository interfaces.
+2022-04-02 10:30:00,343 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8080 (http)
+2022-04-02 10:30:00,351 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2022-04-02 10:30:00,351 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2022-04-02 10:30:00,352 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-02 10:30:00,442 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2022-04-02 10:30:00,443 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1215 ms
+2022-04-02 10:30:00,559 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-02 10:30:00,596 INFO [restartedMain] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-02 10:30:00,703 INFO [restartedMain] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-02 10:30:00,779 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2022-04-02 10:30:00,942 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2022-04-02 10:30:00,961 INFO [restartedMain] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-04-02 10:30:01,626 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-02 10:30:01,633 INFO [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-02 10:30:01,963 WARN [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-02 10:30:02,187 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2022-04-02 10:30:02,203 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2022-04-02 10:30:02,227 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-02 10:30:02,236 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Started MicroserviceApplication in 3.331 seconds (JVM running for 4.324)
+2022-04-02 10:30:14,094 INFO [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-02 10:30:14,094 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2022-04-02 10:30:14,096 INFO [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 2 ms
+2022-04-02 10:30:14,125 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectController: Enter in method getAllObject()
+2022-04-02 10:30:14,239 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectController: List<Object> []
+2022-04-02 10:30:14,239 INFO [http-nio-8080-exec-1] com.courseproject.microservice.controller.ObjectController: Go out from method getAllObject()
+2022-04-02 10:30:26,473 INFO [http-nio-8080-exec-3] com.courseproject.microservice.controller.ObjectController: Enter in method saveObject()
+2022-04-02 10:30:26,473 INFO [http-nio-8080-exec-3] com.courseproject.microservice.controller.ObjectController: ObjectObject(id=null, name=Tiger, description=null, parent_id=null, objectType=null, attributes=null, parentId=null)
+2022-04-02 10:30:26,551 INFO [http-nio-8080-exec-3] com.courseproject.microservice.controller.ObjectController: Go out from method saveObject()
+2022-04-02 10:30:56,206 INFO [http-nio-8080-exec-4] com.courseproject.microservice.controller.ObjectController: Enter in method addAttributeInObject()
+2022-04-02 10:30:56,216 INFO [http-nio-8080-exec-4] com.courseproject.microservice.controller.ObjectController: Object {"id":1,"name":"Tiger","description":null,"parent_id":null,"objectType":{"id":1,"name":"MegaAnimal","description":null,"parent_id":null,"objects":[1],"attributes":[{"id":1,"name":"power","parameters":[],"objects":[],"objectTypes":[1],"typeOfAttribute":null}],"parentId":null},"attributes":[],"parentId":null}
+2022-04-02 10:30:56,216 INFO [http-nio-8080-exec-4] com.courseproject.microservice.controller.ObjectController: List<Long> [1, 2]
+2022-04-02 10:30:56,240 INFO [http-nio-8080-exec-4] com.courseproject.microservice.controller.ObjectController: Go out from method addAttributeInObject()
+2022-04-02 10:33:23,621 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-02 10:33:23,624 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2022-04-02 10:33:23,634 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.

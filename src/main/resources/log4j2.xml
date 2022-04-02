@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <RollingFile name="File" fileName="./logs/controllers-log4j2.log"
+                     filePattern="./logs/app-%d{-dd-MMMM-yyyy}-%i.log4j2.log.gz">
+            <PatternLayout>
+                <pattern>%highlight{%d %p [%t] %C: %msg%n%throwable}</pattern>
+            </PatternLayout>
+            <Policies>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="File" />
+        </Root>
+
+        <Logger name="com.courseproject.microservice.controller" level="INFO"/>
+    </Loggers>
+
+</Configuration>
